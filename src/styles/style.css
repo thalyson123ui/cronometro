@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #BF9004, #F2E530);
+}
+
+#stopwatch {
+    display: flex;
+    flex-direction: column;
+    background-color: #728EA6;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#timer  {
+    background-color: #F2E530;
+    height: 250px;
+    width: 250px;
+    border: 3px solid #F2B705;
+    margin-bottom: 1.5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #BF9004;
+    padding: 4rem;
+}
+
+#actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    color: #728EA6;
+    background-color: #F2E530;
+    transition: background-color .2s ease-in;
+    cursor: pointer; 
+}
+
+#actions button:hover {
+    background-color: #F2B705;
+}
+
+#marks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: #BF9004;
+}
+
+#marks-list p:first-child {
+    margin-top: 1.5rem;
+} 
